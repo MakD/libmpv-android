@@ -47,6 +47,8 @@ if [ ! -d lua ]; then
 		tar -xz -C lua --strip-components=1
 fi
 
+mkdir -p shaderc
+
 [ ! -d libplacebo ] && git clone --depth 1 --branch v$v_libplacebo --recurse-submodules https://code.videolan.org/videolan/libplacebo.git libplacebo
 
 # mpv
