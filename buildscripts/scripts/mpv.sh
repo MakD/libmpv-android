@@ -14,11 +14,20 @@ else
 	exit 255
 fi
 
+mkdir -p "$prefix_dir"/lib/pkgconfig
+cat >"$prefix_dir"/lib/pkgconfig/vulkan.pc <<"END"
+Name: Vulkan
+Description:
+Version: 1.3.275
+Libs: -lvulkan
+Cflags:
+END
+
 unset CC CXX # meson wants these unset
 
 meson setup $build --cross-file "$prefix_dir"/crossfile.txt \
 	--default-library shared \
-	-Diconv=disabled -Dlua=enabled \
+	-Diconv=disabled -Dlua=enabled -Dvulkan=enabled \
 	-Dlibmpv=true -Dcplayer=false \
 	-Dmanpage-build=disabled
 
