@@ -53,20 +53,20 @@ mavenPublishing {
     )
 
     coordinates(
-        groupId = "dev.jdtech.mpv",
+        groupId = "io.github.makd",
         artifactId = "libmpv",
         version = "1.0.0"
     )
 
     pom {
         name = "libmpv-android"
-        description = "libmpv for Android"
+        description = "libmpv for Android with Vulkan"
         inceptionYear = "2023"
-        url = "https://github.com/jarnedemeulemeester/libmpv-android"
+        url = "https://github.com/MakD/libmpv-android"
         licenses {
             license {
                 name = "MIT license"
-                url = "https://github.com/jarnedemeulemeester/libmpv-android/blob/main/LICENSE"
+                url = "https://github.com/MakD/libmpv-android/blob/main/LICENSE"
             }
         }
         developers {
@@ -75,15 +75,20 @@ mavenPublishing {
                 name = "Jarne Demeulemeester"
                 email = "jarnedemeulemeester@gmail.com"
             }
+            developer {
+                id = "MakD"
+                name = "MORPHi"
+                email = "MakD@users.noreply.github.com"
+            }
         }
         scm {
-            url = "https://github.com/jarnedemeulemeester/libmpv-android.git"
-            connection = "scm:git@github.com:jarnedemeulemeester/libmpv-android.git"
-            developerConnection = "scm:git@github.com:jarnedemeulemeester/libmpv-android.git"
+            url = "https://github.com/MakD/libmpv-android.git"
+            connection = "scm:git@github.com:MakD/libmpv-android.git"
+            developerConnection = "scm:git@github.com:MakD/libmpv-android.git"
         }
         issueManagement {
             system = "GitHub"
-            url = "https://github.com/jarnedemeulemeester/libmpv-android/issues"
+            url = "https://github.com/MakD/libmpv-android/issues"
         }
     }
 }
