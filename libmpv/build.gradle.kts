@@ -9,7 +9,7 @@ plugins {
 
 android {
     namespace = "dev.jdtech.mpv"
-    compileSdk = 36
+    compileSdk = 37
     buildToolsVersion = "37.0.0"
     ndkVersion = "30.0.16248370"
 
@@ -55,7 +55,7 @@ mavenPublishing {
     coordinates(
         groupId = "io.github.makd",
         artifactId = "libmpv",
-        version = "1.1.0"
+        version = "1.2.0"
     )
 
     pom {
@@ -65,8 +65,8 @@ mavenPublishing {
         url = "https://github.com/MakD/libmpv-android"
         licenses {
             license {
-                name = "MIT license"
-                url = "https://github.com/MakD/libmpv-android/blob/main/LICENSE"
+                name = "GNU General Public License v3.0 or later"
+                url = "https://www.gnu.org/licenses/gpl-3.0.txt"
             }
         }
         developers {
